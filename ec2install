@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Part 1 - Build a webapp stack with CloudFormation
+
+Resources:
+  EC@2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-038b3df3312ddf25d # ImageID valid only in us-east-1 region
+      InstanceType: t2.micro
+      KeyName: pem12
